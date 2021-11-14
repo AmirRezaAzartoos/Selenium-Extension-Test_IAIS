@@ -1,0 +1,223 @@
+html {
+    max-width: 420px;
+    min-width: 420px;
+    width: 420px;
+    height: auto;
+    padding: 10px;
+}
+
+body {
+    max-width: 400px;
+    min-width: 400px;
+    width: 400px;
+    padding: 10px;
+    background-image: url("../images/bg-01.jpg");
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.table-container {
+    max-width: 100%;
+}
+
+.header-container,
+.row {
+    display: flex;
+    max-width: 100%;
+}
+
+.col-1 {
+    font-family: Noto Sans, sans-serif;
+    font-size: 13px;
+    font-weight: 550;
+    flex: 4;
+}
+
+.col-2 {
+    font-family: Courier, monospace;
+    font-size: 12px;
+    font-weight: 550;
+    flex: 10;
+}
+
+
+/*/////////////////////////////////////*/
+
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table-container {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+tr {
+    display: flex;
+}
+
+thead {
+    text-align: center;
+}
+
+thead,
+tbody,
+table {
+    height: auto;
+    max-width: 400px;
+    min-width: 400px;
+    width: 400px;
+}
+
+.col-1,
+.col-2 {
+    height: auto;
+    cursor: conext-menu;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}
+
+
+/*///////////tooltip//////////////////*/
+
+.tooltip {
+    word-wrap: break-word;
+    padding: 5px;
+    display: block;
+    float: left;
+    width: 250px;
+    text-align: left;
+    cursor: pointer;
+    position: sticky;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*/////////////////////////////////////*/
+
+.addressList {
+    color: whitesmoke;
+}
+
+.tableHead {
+    background: transparent;
+}
+
+.headImage {
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    height: auto;
+}
+
+a.locatButton {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.7em 1.4em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.15em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    text-shadow: -0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%), 0.005em 0.005em 0 mix(#fff, #e91e63, 60%), 0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 0.015em 0.015em mix(#fff, #e91e63, 64%), 0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 0.025em 0.025em 0 mix(#fff, #e91e63, 68%), 0.03em 0.03em 0 mix(#fff, #e91e63, 70%), 0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+    font-size: 16px;
+    font-weight: 600;
+    color: mix(#fff, #e91e63, 85%);
+    background-color: #3369ff;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+    text-align: center;
+    position: relative;
+}
+
+a.locatButton:active {
+    top: 0.1em;
+}
+
+.firstRow {
+    font-family: "Inter", sans-serif;
+    color: mix(#fff, #e91e63, 85%);
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: -0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%), 0.005em 0.005em 0 mix(#fff, #e91e63, 60%), 0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 0.015em 0.015em mix(#fff, #e91e63, 64%), 0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 0.025em 0.025em 0 mix(#fff, #e91e63, 68%), 0.03em 0.03em 0 mix(#fff, #e91e63, 70%), 0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+}
+
+.footer {
+    height: 40px;
+    max-height: 40px;
+}
+
+@media all and (max-width:30em) {
+    a.locatButton {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
